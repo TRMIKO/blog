@@ -10,11 +10,26 @@ import {
   faFacebook,
   faInstagram,
 } from '@fortawesome/free-brands-svg-icons'
-import { faMoon, faSun, faHeart } from '@fortawesome/free-solid-svg-icons'
+import {
+  faMoon,
+  faSun,
+  faHeart,
+  faSortDown,
+  faCircle,
+} from '@fortawesome/free-solid-svg-icons'
 import '@fortawesome/fontawesome-svg-core/styles.css'
 
 config.autoAddCss = false
-library.add(faGithub, faMoon, faSun, faFacebook, faInstagram, faHeart)
+library.add(
+  faGithub,
+  faMoon,
+  faSun,
+  faFacebook,
+  faInstagram,
+  faHeart,
+  faSortDown,
+  faCircle
+)
 
 export default function(Vue, { router, head, isClient }) {
   // Set default layout as a global component

@@ -1,6 +1,8 @@
 <template lang="pug">
   div
     Menu
+    //- div(class="lg:w-3/4 md:w-3/4 sm:w-100 mx-auto")
+    //-   Select
     div(class="lg:w-3/4 md:w-3/4 sm:w-100 mx-auto")
       .flex.my-16(class="lg:w-2/4 md:w-full sm:w-full justify-center sm:justify-center md:justify-start lg:justify-start")
         button.mx-2.pb-2(class="border-b-4 hover:border-pink text-lg" v-on:click="by(true)"  v-bind:class="[type ? 'border-pink' : 'border-transparent']") Publicaciones
@@ -33,10 +35,11 @@ query{
 import Switches from 'vue-switches'
 import Menu from '../components/menu'
 import List from '../components/List'
+import Select from '../components/Select'
 import GridPost from '../components/GridPost'
 import Footer from '../components/Footer'
 export default {
-  components: { Switches, Menu, List, GridPost, Footer },
+  components: { Switches, Menu, List, GridPost, Footer, Select },
   data() {
     return {
       type: true,
@@ -51,9 +54,9 @@ export default {
 </script>
 
 <style>
-svg {
-  width: 23px !important;
-  height: 23px !important;
+select:focus,
+button:focus {
+  outline: 0;
 }
 .grid-themes {
   display: grid;
@@ -63,6 +66,7 @@ svg {
 body {
   background-color: #ecf0f1;
 }
+
 @media (max-width: 1024px) {
   .grid-themes {
     grid-template: auto/repeat(2, 1fr);

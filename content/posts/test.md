@@ -3,7 +3,7 @@ title: Markdown test
 title_meta: test markdon
 category: Digital
 date: 2019-02-27 17:54:43
-image: ./images/image.jpg
+image: ./images/person.jpg
 image_caption: Photo by Josh Spires on Unsplash
 desc: Lorem ipsum dolor sit amet, consectetur adipisicing elit. Error doloremque omnis animi, eligendi magni a voluptatum, vitae, consequuntur rerum illum odit fugit assumenda rem dolores inventore iste reprehenderit maxime! Iusto.
 ---

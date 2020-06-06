@@ -2,11 +2,11 @@
   div
     Header
     div(class="w-4/5 md:w-4/5 lg:w-2/4 xl:w-2/4 mx-auto text-center")
-      h1.text-2xl.mt-32.font-light(class="sm:text-base md:text-5xl") {{$page.post.title}}
+      h1.text-2xl.mt-32.font-light(class="sm:text-base md:text-6xl") {{$page.post.title}}
       p.text-pink.text-2xl.mt-8.mb-16.font-semibold {{$page.post.datetime}}
       g-image.mx-auto.mb-16(class="border-4" :alt="$page.post.alt" :src="$page.post.image.src")
     div(v-html="$page.post.content" class="w-3/4 mx-auto")
-    Footer
+    div.mt-32
 </template>
 
 <script>
@@ -36,31 +36,25 @@ body {
   background-color: #ecf0f1;
 }
 p {
-  font-size: 1.3rem;
+  font-size: 1.2rem;
 }
 h1 {
-  font-size: 2rem;
-  font-weight: bold;
+  font-size: 3rem;
 }
 h2 {
-  font-size: 1.8rem;
-  font-weight: bold;
+  font-size: 2.5rem;
 }
 h3 {
   font-size: 1.6rem;
-  font-weight: bold;
 }
 h4 {
   font-size: 1.5rem;
-  font-weight: bold;
 }
 h5 {
   font-size: 1.4rem;
-  font-weight: bold;
 }
 h6 {
   font-size: 1.35rem;
-  font-weight: bold;
 }
 ol {
   list-style: decimal;
