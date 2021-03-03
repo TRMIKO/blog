@@ -19,6 +19,6 @@
     "@fortawesome/vue-fontawesome": "^0.1.9",
     "gridsome-plugin-pug": "0.0.3",
     "gridsome-plugin-tailwindcss": "^2.2.47",
-    "pug": "^2.0.4"
+    "pug": "^3.0.1"
   }
 }
